@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 - 261402101</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>Form Request Review</h1>
+    <form action="#">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="nama_toko">Nama Toko</label></td>
+                    <td><input type="text" name="nama_toko" id="nama_toko" placeholder="Mi Ayam Emak" required></td>
+                </tr>
+                <tr>
+                    <td><label for="kode_voucher">Kode Kemitraan / Voucher</label></td>
+                    <td><input type="password" name="kode_voucher" id="kode_voucher" placeholder="BUY1get1" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Toko</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="MiAyam01@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="no">No. Hp</label></td>
+                    <td><input type="text" name="no" id="no" placeholder="+62 812 3456 7890" required></td>
+                </tr>
+                <tr>
+                    <td><label for="menu">Menu Request</label></td>
+                    <td>
+                        <select name="menu" id="menu" required>
+                            <option value="#">Pilih Menu Request</option>
+                            <option value="biasa">Mi Ayam Biasa</option>
+                            <option value="bakso">Mi Ayam Bakso Ceker</option>
+                            <option value="yamin">Mi Yamin Manis/Asin</option>
+                            <option value="pangsit">Mi Ayam Pangsit Spesial</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="jenis_kolab">Jenis Kolaborasi</label></td>
+                    <td class="checks">
+                        <input type="radio" name="jenis_kolab" id="free" value="free" required>
+                        <label for="free">Free Product/Barter</label><br>
+                        <input type="radio" name="jenis_kolab" id="paid" value="paid" required>
+                        <label for="paid">Paid Endorse</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="topik_lain">Fasilitas Toko</label>
+                    </td>
+                    <td class="checks">
+                        <input type="checkbox" name="topik_lain" id="wifi" value="wifi">
+                        <label for="wifi">Free Wi-fi</label><br>
+                        <input type="checkbox" name="topik_lain" id="parkir_luas" value="ai">
+                        <label for="parkir_luas">Parkir Luas</label><br>
+                        <input type="checkbox" name="topik_lain" id="ac" value="ai">
+                        <label for="ac">Ruang AC</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="keunikan">Keunikan Mi Ayam Ini</label></td>
+                    <td>
+                        <textarea name="keunikan" id="keunikan" placeholder="Ceritakan keunikan mi ayam ini!" required></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <table class="btn-group">
+            <tr>
+                <td>
+                    <button type="submit">Kirim</button>
+                </td>
+                <td>
+                    <button type="reset">Ulangi</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+    <footer>
+        &copy; 2026 - 261402101 Nazwa Dwi Ramadhani
+    </footer>
+</body>
+
+</html>
