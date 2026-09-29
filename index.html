@@ -4,162 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda | Mi Ayam Review</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tugas 4 - 261402101 | FilmKu</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
     <style>
-        .header {
-            padding: 10px;
-            text-align: left;
-            font-size: 35px;
-            font-family: Google Sans;
-            background-color: cadetblue;
-            color: aliceblue;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
-        .main-menu {
-            padding: 10px;
-            text-align: left;
-        }
-
-        .main-items {
-            padding-right: 20px;
-            font-family: Google Sans;
-            color: cadetblue;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .sidebar {
-            padding-top: 30px;
-        }
-
-        .content-items {
-            padding: 5px 10px;
+        body {
             font-family: Nunito;
-            text-align: justify;
         }
 
-        .th-img {
-            width: 16%;
+        .brand-name {
+            font-family: Google Sans;
         }
 
-        img {
-            display: block;
-            object-fit: cover;
-            width: 100%;
-            height: auto;
+        .judul {
+            font-family: Fraunces;
+            font-size: 50px;
         }
 
-        .footer {
-            height: 100px;
-            padding: 10px;
-            text-align: center;
-            font-family: Nunito;
+        .judul-card {
+            font-family: Fraunces;
         }
     </style>
 </head>
 
 <body>
-    <table border="0" width="100%">
-        <!--Header-->
-        <tr>
-            <td class="header" colspan="6">Mi Ayam Review</td>
-        </tr>
+    <!-- navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <div class="container-fluid">
+                <!-- Logo dan Nama Brand -->
+                <a class="navbar-brand p-0 ms-2 d-flex align-items-center" href="#">
+                    <img src="/multimedia/logo-watching.png" alt="Logo Watching" height="40" class="p-0">
+                    <span class="h2 p-0 m-0 brand-name d-none d-md-block">FilmKu</span>
+                </a>
+                <!-- button toogle collapse -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sub sub nav -->
+                <div class="collapse navbar-collapse brand-name" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- tugas proweb -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark brand-name fw-medium" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tugas Proweb
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="/tugas/tugas1_pertemuan2/Mie_Ayam_Review/beranda.html">Tugas 1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="/tugas/tugas2_pertemuan4/tugas2.html">Tugas
+                                        2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="/tugas/tugas3_pertemuan5/tugas3.html">Tugas
+                                        3</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="/tugas/tugas4_pertemuan6/index.html">Tugas
+                                        4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- dropdown identitas -->
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle text-dark brand-name fw-medium" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tentang Saya
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <p class="text-center m-0">261402101</p>
+                                    <p class="text-center m-0">Nazwa Dwi Ramadhani</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-success rounded-3">Daftar</a>
+                        <a href="#" class="btn btn-primary rounded-3 ms-2">Masuk</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-        <!--Main Menu-->
-        <tr>
-            <th class="main-menu" colspan="6">
-                <a href="index.html" class="main-items">Beranda</a>
-                <a href="petisah.html" class="main-items">Medan Petisah</a>
-                <a href="helvetia.html" class="main-items">Helvetia</a>
-                <a href="percut.html" class="main-items">Percut Sei Tuan</a>
-                <a href="tugas2.html" class="main-items">Tugas 2</a>
-                <a href="tugas3.html" class="main-items">Tugas 3</a>
-            </th>
-        </tr>
+    <!-- full content -->
+    <section>
+        <div class="container mt-4 mb-5 pt-4">
+            <div class="row align-items-center my-4">
+                <div class="col-8 d-none d-md-block d-lg-block d-xl-block">
+                    <img src="/multimedia/img-watching.jpg" alt="Gambar Watching" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <p class="judul fw-medium">Mau Nonton Apa Hari Ini?</p>
+                    <p class="brand-name mt-3 mb-4">
+                        Jelajahi pilihan film terbaik dari berbagai genre, mulai dari aksi, romantis, hingga tontonan
+                        ramah
+                        keluarga.
+                    </p>
+                </div>
+            </div>
 
-        <!--Foto-foto Mi Ayam-->
-        <tr>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4bN5sNuKdU4PYZVKirn5KAcJXTlFP7YH8s3cMbqrN9w&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXGEmsx7ZlyaiZTGf7a_ZDE_tSsXsC_sI4DwguFdGrew&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZoBsxkiMuVAe_CTrM5a6RRBBz9_lsnimLydQSxHc-g&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkroQsB0lAzQ1avvDVX1kdRIAxwrZBCavsdxUUOQCoLg&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzfaXRxYE5SntcuiES7Ja-h-mtp4yF5u9QwOnkyiN4Yg&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-            <th class="th-img">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5AkNfD5I7H7e9lGjol8K-4BsCNDyET1bo_2DIGSVdA&s=10"
-                    alt="Gambar Mi Ayam">
-            </th>
-        </tr>
+            <div class="row mt-5 mb-3 fs-1 bg-body-tertiary judul-card">
+                <span class="ms-1">Untuk Kamu</span>
+            </div>
 
-        <!--Jarak Ajaaa-->
-        <tr>
-            <th colspan="4">
-                <br>
-            </th>
-        </tr>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Skenario Sang Jenderal -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQoUqgg1dzVgeNxetCUqxVsIQkv7aOaO1j5iRJ8LcCvE2uLv9OlRaquJjVKY_HsMp-Fn3NPVAom3ar3jjc_6MnaW4jZ-eslCbbKC_Faux_B-oTokSRl8ka2IQZRul9dqA59VyhS3llFm7FBYCA.jpg?r=a24"
+                            class="card-img-top" alt="Skenario Sang Jenderal">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">Skenario Sang Jenderal</h5>
+                            <p class="card-text">Film Dokumenter Skenario Sang Jenderal membahas kasus pembunuhan
+                                berencana terhadap
+                                Brigadir Nofriansyah Yosua Hutabarat (Brigadir J) yang melibatkan mantan Kadiv
+                                Propam
+                                Polri, Irjen Ferdy Sambo.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!--Sidebar dan Konten-->
-        <!--Foto dan Nama Outlet-->
-        <tr class="sidebar">
-            <td class="content-items">
-                &nbsp;
-            </td>
-            <td class="content-items" colspan="4">
-                <p style="font-size: 24px;">
-                    <b>Siapa sih yang nggak kenal sama Mi Ayam?</b>
-                </p>
-                <p>
-                    Mi kuning kenyal, ayam semur gurih, kuah seger, ditambah sambel + pangsit
-                    crispy... udah paket komplit bikin nagih.
-                    Mi ayam itu bukan cuma makanan, tapi udah jadi comfort food orang Indonesia.
-                    Dari warung tenda sampai resto, pasti ada mi ayam nya.
-                </p>
-                <p>
-                    Tapi, tau gak sih?
-                    Mi Ayam itu diperkirakan masuk ke Indonesia pada abad ke-19, dibawa sama para pedagang dari
-                    Tiongkok. Awalnya disebut <b><u>"mie yamin"</u></b>, lalu beradaptasi dengan selera lokal 
-                    dan akhirnya jadi <b><u>"mie ayam"</u></b> seperti yang kita kenal sekarang.
-                    Karena harganya terjangkau dan rasanya disukai semua kalangan, mie ayam jadi salah 
-                    satu makanan favorit masyarakat Indonesia.
-                </p>
-                <p>
-                    Sumber : Wikipedia, Kompas.com, DetikFood
-                </p>
-            </td>
-            <td class="content-items">
-                &nbsp;
-            </td>
-        </tr>
+                <!-- UNABOMBER -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ-HIJi-MesSuGeQoIkxunjHR8JI_BMfclEebMksANjvExo5WVKxnttfIWtGV1Dx-SK4yRkriLkZtciIOhdOhmiCbqBT9JRsqg6RK6I5blZjqgjflq-hmmcm0pkZjMLnpyVF23j55tQtS24s.jpg?r=00e"
+                            class="card-img-top" alt="Sekawan Limo 2">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">UNABOMBER</h5>
+                            <p class="card-text">Unabomber mengisahkan nyata tentang Ted Kaczynski, seorang mantan anak ajaib dan
+                                jenius matematika lulusan Universitas Harvard yang melakukan kampanye teror pengiriman bom
+                                via pos selama hampir 20 tahun di Amerika Serikat</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!--Footer-->
-        <tr class="footer">
-            <td colspan="6">&copy; 2026 - 261402101 Nazwa Dwi Ramadhani</td>
-        </tr>
-    </table>
+                <!-- Tuhan, Benarkah Kau Mendengarku? -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZsEVPOAthgSVb9Y2A3K58LkF4eYVRE2Vaykfw6deDB_ygvpcuydU-_k5us5lBg2vOkB3_p_6TM2Eu4O-f6zA1ICxXwOYtf2wRvXCLyDFGm9ZIb_USfKWVkb5FaxH4kWclBtEY8T1B4BrrEySw.webp?r=e54"
+                            class="card-img-top" alt="Tuhan Benarkah Kau Mendengarku?">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">Tuhan Benarkah Kau Mendengarku?</h5>
+                            <p class="card-text">Perjuangan Sarah (Revalina S. Temat) yang memilih bercerai dari
+                                suaminya (Satrio), karena menolak dimadu saat Satrio menikah lagi
+                                dengan seorang resepsionis muda bernama Annisa (Megan Domani).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-3 fs-1 bg-body-tertiary judul-card">
+                <span class="ms-1">Terbaru</span>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Na Willa -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXhnjtq87DdVz7V5QgQ2XFoUkCWcugQsGAP2UgdbUIwf3OzZy7ZvPEHs_QwhFtk79grOuoYP4wN5exAPD7eUaUW2D5R6w-ayKAwS.webp?r=506"
+                            class="card-img-top" alt="Na Willa">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">Na Willa</h5>
+                            <p class="card-text">Film drama keluarga musikal Indonesia yang
+                                mengisahkan keseharian dan petualangan Na Willa, seorang gadis kecil berusia
+                                enam tahun yang tinggal di sebuah gang di Surabaya pada era 1960-an.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ayah, Ini Arahnya Kemana Ya? -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR6xH0p9DCvMs0S1UsRl9avovCo2UUYaMcjXMaUpcMEQueDFI6dn3XEStHsprmFzqdERMGjPTHS0ef4YTY2x0poUg4rwIyMb-tlM.webp?r=c03"
+                            class="card-img-top" alt="Ayah, Ini Arahnya Kemana Ya?">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">Ayah, Ini Arahnya Kemana Ya?</h5>
+                            <p class="card-text">Film Ayah, Ini Arahnya ke Mana, Ya? mengisahkan tentang perjuangan
+                                seorang anak perempuan bernama Dira yang hidup bersama ayah yang fisik-nya ada
+                                tetapi tidak pernah hadir secara emosional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frieren -->
+                <div class="col">
+                    <div class="card">
+                        <img src="https://occ-0-6707-64.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABWqWwQT4OyGBnLLv17cMKtgDG2jce7qzYQT7b_Pn0HaLJETP_o8IcLA_3MR9xGqYyb4H0XnjCF2LNZwRrGEyUtM4ORQsNG-e_Ko.webp?r=ad2"
+                            class="card-img-top" alt="Frieren">
+                        <div class="card-body">
+                            <h5 class="card-title judul-card fw-medium">Frieren</h5>
+                            <p class="card-text">Anime dan manga Frieren: Beyond Journey's End menceritakan kisah
+                                hidup seorang penyihir elf bernama Frieren setelah ia dan kelompok pahlawannya
+                                berhasil mengalahkan Raja Iblis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <div class="text-center p-3">
+            &copy 2026 Copyright - 261402101 - Nazwa Dwi Ramadhani
+        </div>
+    </footer>
+
+    <script src="/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
